@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="20"
+    android:background="@drawable/covid3"
+    tools:context=".MainActivity"
+    >
+
+
+    <TextView
+        android:id="@+id/marqueryText"
+        android:layout_weight="1"
+        android:text="@string/topText"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit ="marquee_forever"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:scrollHorizontally="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#FAF9FB"
+        android:gravity="center"
+        />
+
+    <!-- android:background="#AD6B6D76" -->
+
+    <LinearLayout
+        android:layout_weight="19"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_weight="1"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+
+                <Button
+                    android:id="@+id/buttonId1"
+                    android:background="@drawable/roundedbutton"
+                    android:textColor="#fff"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    android:text="স্বাস্থ্য ঝুঁকি পরীক্ষা"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+
+                <Button
+                    android:id="@+id/buttonId2"
+                    android:background="@drawable/roundedbutton"
+                    android:textColor="#fff"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:text="স্বাস্থ্য বিধি "
+                    android:textSize="20sp"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_weight="1"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+
+                <Button
+                    android:id="@+id/buttonId3"
+                    android:background="@drawable/roundedbutton"
+                    android:textColor="#fff"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:text="করোনা ইনফো "
+                    android:textSize="20sp"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+
+                <Button
+                    android:id="@+id/buttonId4"
+                    android:background="@drawable/roundedbutton"
+                    android:textColor="#fff"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:text="অন্যান্য তথ্য সেবা "
+                    android:textSize="20sp"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    />
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

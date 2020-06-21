@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".InfoPage2">
+
+    <EditText
+        android:id="@+id/birthDateId"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="Birth date"
+        android:textSize="20sp"
+        android:backgroundTint="#E6D758"
+        android:textCursorDrawable="@null"
+        android:layout_margin="5dp"
+        />
+
+    <EditText
+        android:id="@+id/meritalStatusId"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="Merital Status"
+        android:textSize="20sp"
+        android:backgroundTint="#E6D758"
+        android:textCursorDrawable="@null"
+        android:layout_margin="5dp"
+        />
+
+    <EditText
+        android:id="@+id/nidNoId"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="NID no."
+        android:textSize="20sp"
+        android:backgroundTint="#E6D758"
+        android:textCursorDrawable="@null"
+        android:layout_margin="5dp"
+        />
+
+    <EditText
+        android:id="@+id/presentAdressId"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="Present Adress"
+        android:textSize="20sp"
+        android:backgroundTint="#E6D758"
+        android:textCursorDrawable="@null"
+        android:layout_margin="5dp"
+        />
+
+    <EditText
+        android:id="@+id/permanentAdressId"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="Permanent Adress"
+        android:textSize="20sp"
+        android:backgroundTint="#E6D758"
+        android:textCursorDrawable="@null"
+        android:layout_margin="5dp"
+        />
+
+    <Button
+        android:id="@+id/submitButtonId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="40dp"
+        android:text="Submit"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+</LinearLayout>

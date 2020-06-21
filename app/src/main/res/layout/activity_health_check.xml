@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HealthCheck">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="* আপনার বয়স কত?"
+                android:textSize="20sp"
+                />
+
+            <RadioGroup
+                android:id="@+id/_1radioGroupId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/_1a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="০-২০"
+                    android:textSize="20sp"
+                    android:layout_margin="15dp"
+                    android:buttonTint="#F4BE1E"
+                    />
+
+                <RadioButton
+                    android:id="@+id/_1b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="২১-৩০"
+                    android:textSize="20sp"
+                    android:layout_margin="15dp"
+                    android:buttonTint="#F4BE1E"
+                    />
+
+
+                <RadioButton
+                    android:id="@+id/_1c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="৩১-৪০"
+                    android:textSize="20sp"
+                    android:layout_margin="15dp"
+                    android:buttonTint="#F4BE1E"
+                    />
+
+                <RadioButton
+                    android:id="@+id/_1d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="৪১-৫০"
+                    android:textSize="20sp"
+                    android:layout_margin="15dp"
+                    android:buttonTint="#F4BE1E"
+                    />
+
+                <RadioButton
+                    android:id="@+id/_1e"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="৫১-৬৫"
+                    android:textSize="20sp"
+                    android:layout_margin="15dp"
+                    android:buttonTint="#F4BE1E"
+                    />
+
+                <RadioButton
+                    android:id="@+id/_1f"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="৬৫+"
+                    android:textSize="20sp"
+                    android:layout_margin="15dp"
+                    android:buttonTint="#F4BE1E"
+                    />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="* আপনার লিঙ্গ নির্বাচন করুন"
+                android:textSize="20sp"
+                />
+
+            <RadioGroup
+                android:id="@+id/_2radioGroupId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/_2a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="পুরুষ"
+                    android:textSize="20sp"
+                    android:layout_margin="15dp"
+                    android:buttonTint="#F4BE1E"
+                    />
+
+                <RadioButton
+                    android:id="@+id/_2b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="মহিলা"
+                    android:textSize="20sp"
+                    android:layout_margin="15dp"
+                    android:buttonTint="#F4BE1E"
+                    />
+
+                <RadioButton
+                    android:id="@+id/_2c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="অন্য "
+                    android:textSize="20sp"
+                    android:layout_margin="15dp"
+                    android:buttonTint="#F4BE1E"
+                    />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            >
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="* আপনার শরীরের বর্তমান তাপমাত্রা কত?"
+                android:textSize="20sp"
+                />
+
+            <RadioGroup
+                android:id="@+id/_3radioGroupId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/_3a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="শরীরের তাপমাত্রা স্বাভাবিক আছে 96°F-98.6°F"
+                    android:textSize="20sp"
+                    android:layout_margin="15dp"
+                    android:buttonTint="#F4BE1E"
+                    />
+                <RadioButton
+                    android:id="@+id/_3b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="জ্বর 98.6°F-102°F"
+                    android:textSize="20sp"
+                    android:layout_margin="15dp"
+                    android:buttonTint="#F4BE1E"
+                    />
+                <RadioButton
+                    android:id="@+id/_3c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="অনেক জ্বর >102°F"
+                    android:textSize="20sp"
+                    android:layout_margin="15dp"
+                    android:buttonTint="#F4BE1E"
+                    />
+                <RadioButton
+                    android:id="@+id/_3d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="জানি না"
+                    android:textSize="20sp"
+                    android:layout_margin="15dp"
+                    android:buttonTint="#F4BE1E"
+                    />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="* আপনার কি এই লক্ষণ গুলো রয়েছে? (আপনি একাধিক টিক দিতে পারবেন)"
+                android:textSize="20sp"
+                />
+
+           <CheckBox
+               android:id="@+id/_4a"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_margin="15dp"
+               android:text="শ্বাসকষ্ট"
+               android:textSize="20sp"
+               />
+            <CheckBox
+                android:id="@+id/_4b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="শুকনাকাশি "
+                android:textSize="20sp"
+                />
+            <CheckBox
+                android:id="@+id/_4c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="গলা ব্যথা"
+                android:textSize="20sp"
+                />
+            <CheckBox
+                android:id="@+id/_4d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="অতি দুর্বলতা (যেমনঃ বাথরুমে যেতে অন্যের সাহায্যের প্রয়োজন হয় এমন)"
+                android:textSize="20sp"
+                />
+            <CheckBox
+                android:id="@+id/_4e"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="সর্দি বা নাক দিয়ে পানি পড়া"
+                android:textSize="20sp"
+                />
+            <CheckBox
+                android:id="@+id/_4f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="একটিও না"
+                android:textSize="20sp"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="* অতিরিক্ত কি কি লক্ষণ আপনার রয়েছে?(আপনি একাধিক টিক দিতে পারবেন)"
+                android:textSize="20sp"
+                />
+
+            <CheckBox
+                android:id="@+id/_5a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="পেট ব্যাথা"
+                android:textSize="20sp"
+                />
+            <CheckBox
+                android:id="@+id/_5b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="বমি বা পাতলা পায়খানা"
+                android:textSize="20sp"
+                />
+            <CheckBox
+                android:id="@+id/_5c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="বুকে ব্যথা এবং চাপ অনুভব করা"
+                android:textSize="20sp"
+                />
+            <CheckBox
+                android:id="@+id/_5d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="মাংশপেশি তে ব্যাথা"
+                android:textSize="20sp"
+                />
+            <CheckBox
+                android:id="@+id/_5e"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="স্বাদ না পাওয়া"
+                android:textSize="20sp"
+                />
+            <CheckBox
+                android:id="@+id/_5f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="নাকে গন্ধ না পাওয়া"
+                android:textSize="20sp"
+                />
+            <CheckBox
+                android:id="@+id/_5g"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="এচোখ চুলকানো বা লাল হয়ে যাওয়া"
+                android:textSize="20sp"
+                />
+            <CheckBox
+                android:id="@+id/_5h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="তন্দ্রাচ্ছন্নভাবসম্পন্ন"
+                android:textSize="20sp"
+                />
+            <CheckBox
+                android:id="@+id/_5i"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="একটিও না"
+                android:textSize="20sp"
+                />
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="* আপনার ভ্রমণ এর বিস্তারিত তথ্য দিন"
+                android:textSize="20sp"
+                />
+
+            <RadioGroup
+                android:id="@+id/_6radioGroupId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/_6a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="গত ১৪ দিনের মধ্যে কোথাও ভ্রমণ করি নাই অথবা করোনা আক্রান্ত কিংবা জ্বর, কাশি, শ্বাসকষ্ট আছে এমন কারো কাছাকাছি যাই নাই"
+                    android:textSize="20sp"
+                    android:layout_margin="15dp"
+                    android:buttonTint="#F4BE1E"
+                    />
+
+                <RadioButton
+                    android:id="@+id/_6b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" গত ১৪ দিনের মধ্যে জ্বর, কাশি, শ্বাসকষ্ট আছে এমন কারো সংস্পর্শে গিয়েছিলাম (যেমনঃ পরিবার সদস্য / সহকর্মী)"
+                    android:textSize="20sp"
+                    android:layout_margin="15dp"
+                    android:buttonTint="#F4BE1E"
+                    />
+                <RadioButton
+                    android:id="@+id/_6c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="গত ১৪ দিনের মধ্যে বিদেশ থেকে ফিরেছে এমন কারো সংস্পর্শে গিয়েছিলাম"
+                    android:textSize="20sp"
+                    android:layout_margin="15dp"
+                    android:buttonTint="#F4BE1E"
+                    />
+
+                <RadioButton
+                    android:id="@+id/_6d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="গত ১৪ দিনের মধ্যে করোনা ভাইরাসে আক্রান্ত এলাকা বা বিদেশে ভ্রমণ করেছি"
+                    android:textSize="20sp"
+                    android:layout_margin="15dp"
+                    android:buttonTint="#F4BE1E"
+                    />
+                <RadioButton
+                    android:id="@+id/_6e"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="গত ১৪ দিনের মধ্যে করোনা ভাইরাসে আক্রান্ত ব্যক্তির সংস্পর্শে গিয়েছিলাম"
+                    android:textSize="20sp"
+                    android:layout_margin="15dp"
+                    android:buttonTint="#F4BE1E"
+                    />
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="* আপনার কি এই রোগ গুলো আগে থেকেই আছে? (যদি থাকে তাহলে সবগুলো টিক দিতে পারবেন)"
+                android:textSize="20sp"
+                />
+
+            <CheckBox
+                android:id="@+id/_7a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="ফুসফুসের সমস্যা"
+                android:textSize="20sp"
+                />
+            <CheckBox
+                android:id="@+id/_7b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="হৃদরোগের সমস্যা"
+                android:textSize="20sp"
+                />
+            <CheckBox
+                android:id="@+id/_7c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="উচ্চ রক্ত চাপ"
+                android:textSize="20sp"
+                />
+            <CheckBox
+                android:id="@+id/_7d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="ডায়াবেটিস"
+                android:textSize="20sp"
+                />
+            <CheckBox
+                android:id="@+id/_7e"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="কিডনির সমস্যা"
+                android:textSize="20sp"
+                />
+            <CheckBox
+                android:id="@+id/_7f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="ক্যান্সার"
+                android:textSize="20sp"
+                />
+            <CheckBox
+                android:id="@+id/_7g"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="একটিও না"
+                android:textSize="20sp"
+                />
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="* আপনার কি ধূমপানের অভ্যাস আছে?"
+                android:textSize="20sp"
+                />
+
+            <RadioGroup
+                android:id="@+id/_8radioGroupId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/_8a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="হ্যাঁ"
+                    android:textSize="20sp"
+                    android:layout_margin="15dp"
+                    android:buttonTint="#F4BE1E"
+                    />
+
+                <RadioButton
+                    android:id="@+id/_8b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="না"
+                    android:textSize="20sp"
+                    android:layout_margin="15dp"
+                    android:buttonTint="#F4BE1E"
+                    />
+
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="* আপনি কি স্বাস্থ্যকর্মী ?"
+                android:textSize="20sp"
+                />
+
+            <RadioGroup
+                android:id="@+id/_9radioGroupId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/_9a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="হ্যাঁ"
+                    android:textSize="20sp"
+                    android:layout_margin="15dp"
+                    android:buttonTint="#F4BE1E"
+                    />
+
+                <RadioButton
+                    android:id="@+id/_9b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="না"
+                    android:textSize="20sp"
+                    android:layout_margin="15dp"
+                    android:buttonTint="#F4BE1E"
+                    />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/submitButtonId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:background="#8A249C"
+            />
+
+    </LinearLayout>
+
+</ScrollView>

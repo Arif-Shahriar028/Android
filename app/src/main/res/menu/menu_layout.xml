@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+
+        <!-- <item
+               android:id="@+id/logoutId"
+               android:title="Logout"
+               app:showAsAction="never"
+               /> -->
+
+        <item
+            android:id="@+id/feedbackId"
+            android:title="Send Feedback"
+            app:showAsAction="never"
+            />
+
+        <item
+            android:id="@+id/aboutId"
+            android:title="About This app"
+            app:showAsAction="never"
+            />
+
+        <!-- <item
+             android:id="@+id/ratingId"
+             android:title="rate us"
+             app:showAsAction="never"
+
+             />  -->
+
+        <item
+            android:id="@+id/shareId"
+            android:title="Share this app"
+            app:showAsAction="always"
+            android:icon="@drawable/ic_baseline_share_24"
+            />
+
+</menu>

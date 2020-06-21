@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="6"
+    tools:context=".OthersService">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/alert"
+        android:layout_weight="1"
+        android:textSize="15sp"
+        android:padding="10dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:orientation="vertical"
+        >
+
+        <Button
+            android:id="@+id/ButtonId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="বিশ্ব করোনা পরিস্থিতি "
+            android:textSize="20sp"
+            android:background="#B0E4EB"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:layout_marginRight="20dp"
+            />
+
+        <Button
+            android:id="@+id/ButtonId2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="করোনা নিয়ে ভুল ধারণা"
+            android:textSize="20sp"
+            android:background="#B0E4EB"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:layout_marginRight="20dp"
+            />
+
+        <Spinner
+            android:layout_margin="10dp"
+            android:layout_marginTop="100dp"
+            android:id="@+id/spinner2Id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbarSize="30dp"
+            android:gravity="center_horizontal"
+            >
+
+        </Spinner>
+
+        <Spinner
+            android:id="@+id/spinner1Id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:scrollbarSize="30dp"
+            android:gravity="center_horizontal"
+            >
+
+        </Spinner>
+
+        <Spinner
+            android:id="@+id/spinner3Id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:scrollbarSize="30dp"
+            android:gravity="center_horizontal"
+            >
+
+        </Spinner>
+
+        <Button
+            android:id="@+id/ButtonId3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="করোনা জয়ের গল্প !"
+            android:textSize="20sp"
+            android:background="#B0E4EB"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:layout_marginRight="20dp"
+            />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
