@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ButtonView</string>
+    <string name="login_button_name">Login</string>
+    <string name="clear_button_name">Clear</string>
+</resources>
