@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DatePickTimePickDialog</string>
+    <string name="title">Exit</string>
+    <string name="message">Do you want to exit ?</string>
+</resources>
