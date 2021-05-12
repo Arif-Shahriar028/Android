@@ -26,7 +26,7 @@ public class Intro extends AppCompatActivity {
 
         getSupportActionBar().hide();  // hide action bar only for this activity
 
-        progressBar = (ProgressBar) findViewById(R.id.progressBarId);
+       // progressBar = (ProgressBar) findViewById(R.id.progressBarId);
 
 
         Thread thread = new Thread(new Runnable() {
@@ -47,7 +47,7 @@ public class Intro extends AppCompatActivity {
         {
             try {
                 Thread.sleep(10);
-                progressBar.setProgress(progress);
+               // progressBar.setProgress(progress);
             }
             catch (InterruptedException e)
             {

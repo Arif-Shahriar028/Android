@@ -4,156 +4,195 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#C9F9F7F7"
+    android:weightSum="2"
     android:orientation="vertical"
-    android:weightSum="20"
-    android:background="@drawable/covid3"
     tools:context=".MainActivity"
     >
 
-
-    <TextView
-        android:id="@+id/marqueryText"
-        android:layout_weight="1"
-        android:text="@string/topText"
-        android:singleLine="true"
-        android:ellipsize="marquee"
-        android:marqueeRepeatLimit ="marquee_forever"
-        android:focusable="true"
-        android:focusableInTouchMode="true"
-        android:scrollHorizontally="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:textColor="#FAF9FB"
-        android:gravity="center"
-        />
-
-    <!-- android:background="#AD6B6D76" -->
-
     <LinearLayout
-        android:layout_weight="19"
-        android:weightSum="2"
+        android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:orientation="horizontal"
+        android:weightSum="2"
         >
 
-        <LinearLayout
+        <androidx.cardview.widget.CardView
+            android:id="@+id/buttonId1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:weightSum="2"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
             android:layout_weight="1"
+            android:layout_margin="10dp"
             >
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+
                 >
 
-                <Button
-                    android:id="@+id/buttonId1"
-                    android:background="@drawable/roundedbutton"
-                    android:textColor="#fff"
-                    android:layout_width="150dp"
+                <ImageView
+                    android:layout_width="100dp"
                     android:layout_height="150dp"
-                    android:layout_margin="10dp"
-                    android:text="স্বাস্থ্য ঝুঁকি পরীক্ষা"
-                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/health_check"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="স্বাস্থ্য পরীক্ষা"
                     android:gravity="center"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
                     />
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="vertical"
-                android:gravity="center"
-                >
-
-                <Button
-                    android:id="@+id/buttonId2"
-                    android:background="@drawable/roundedbutton"
-                    android:textColor="#fff"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:text="স্বাস্থ্য বিধি "
-                    android:textSize="20sp"
-                    android:layout_margin="10dp"
-                    android:gravity="center"
-                    />
-            </LinearLayout>
+        </androidx.cardview.widget.CardView>
 
 
-
-        </LinearLayout>
-
-        <LinearLayout
+        <androidx.cardview.widget.CardView
+            android:id="@+id/buttonId2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:weightSum="2"
+            android:layout_height="match_parent"
             android:layout_weight="1"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_margin="10dp"
             >
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
                 android:gravity="center"
                 >
 
-                <Button
-                    android:id="@+id/buttonId3"
-                    android:background="@drawable/roundedbutton"
-                    android:textColor="#fff"
-                    android:layout_width="150dp"
+                <ImageView
+                    android:layout_width="100dp"
                     android:layout_height="150dp"
-                    android:text="করোনা ইনফো "
-                    android:textSize="20sp"
-                    android:layout_margin="10dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/hygiene"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="স্বাস্থ্যবিধি "
                     android:gravity="center"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
                     />
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="vertical"
-                android:gravity="center"
-                >
-
-                <Button
-                    android:id="@+id/buttonId4"
-                    android:background="@drawable/roundedbutton"
-                    android:textColor="#fff"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:text="অন্যান্য তথ্য সেবা "
-                    android:textSize="20sp"
-                    android:layout_margin="10dp"
-                    android:gravity="center"
-                    />
-
-
-            </LinearLayout>
-
-
-
-        </LinearLayout>
-
-
+        </androidx.cardview.widget.CardView>
 
     </LinearLayout>
 
 
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/buttonId3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_margin="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/update2"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="করোনা আপডেট"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/buttonId4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_margin="10dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/others_info"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="অন্যান্য তথ্যসেবা "
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
 </LinearLayout>
+

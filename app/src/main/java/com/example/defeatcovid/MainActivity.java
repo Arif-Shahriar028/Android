@@ -2,6 +2,7 @@ package com.example.defeatcovid;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,7 +16,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
-    private Button button1, button2, button3, button4;
+    private CardView button1, button2, button3, button4;
     private TextView textView;
 
     @Override
@@ -23,18 +24,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        setTitle("Home");
-
+        setTitle("   মূল পাতা");
+        /// to set logo on top bar
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setLogo(R.drawable.medical_mask);
+        getSupportActionBar().setLogo(R.drawable.main2);
         getSupportActionBar().setDisplayUseLogoEnabled(true);
 
-        button1 = (Button) findViewById(R.id.buttonId1);
-        button2 = (Button) findViewById(R.id.buttonId2);
-        button3 = (Button) findViewById(R.id.buttonId3);
-        button4 = (Button) findViewById(R.id.buttonId4);
-        textView = (TextView) findViewById(R.id.marqueryText);
-        textView.setSelected(true);
+        button1 = (CardView) findViewById(R.id.buttonId1);
+        button2 = (CardView) findViewById(R.id.buttonId2);
+        button3 = (CardView) findViewById(R.id.buttonId3);
+        button4 = (CardView) findViewById(R.id.buttonId4);
+        //textView = (TextView) findViewById(R.id.marqueryText);
+        //textView.setSelected(true);
 
         button1.setOnClickListener(this);
         button2.setOnClickListener(this);

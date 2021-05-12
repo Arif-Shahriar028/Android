@@ -25,7 +25,8 @@ public class CoronaMap extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_corona_map);
 
-        setTitle("Defeat Covid");
+        setTitle("করোনা আপডেট");
+
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
@@ -56,7 +57,6 @@ public class CoronaMap extends AppCompatActivity {
             }
 
         });
-        setTitle("করোনা ইনফো");
 
         webview.loadUrl("http://covid19tracker.gov.bd/");
 
